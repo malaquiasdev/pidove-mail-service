@@ -1,0 +1,33 @@
+{
+  "name": "pidove-mail-service",
+  "version": "1.0.0",
+  "description": "This is a scalable REST API to send emails with predefined templates.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malaquiasdev/pidove-mail-service.git"
+  },
+  "author": "Mateus Malaquias <mateusmalaquiasdev@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malaquiasdev/pidove-mail-service/issues"
+  },
+  "homepage": "https://github.com/malaquiasdev/pidove-mail-service#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fastify": "^2.10.0",
+    "fastify-swagger": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1"
+  }
+}
