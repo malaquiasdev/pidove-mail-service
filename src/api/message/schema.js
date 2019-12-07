@@ -1,11 +1,11 @@
 const schema = {
   body: {
     type: 'object',
-    required: ['fullName', 'email', 'type'],
+    required: ['fullName', 'email', 'templateType'],
     properties: {
       fullName: { type: 'string' },
       email: { type: 'string', format: 'email' },
-      type: { type: 'string' }
+      templateType: { type: 'string', enum: ['newUser'] }
     }
   },
   response: {

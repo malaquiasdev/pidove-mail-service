@@ -1,6 +1,9 @@
 require('dotenv/config');
 const fastify = require('fastify')({
-  logger: true
+  logger: {
+    prettyPrint: true,
+    level: 'info'
+  }
 });
 const routes = require('./src/api/routes');
 const swaggerConfig = require('./src/config/swagger');
