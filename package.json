@@ -4,8 +4,8 @@
   "description": "This is a scalable REST API to send emails with predefined templates.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node NODE_ENV=production index.js",
+    "dev": "nodemon NODE_ENV=development index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

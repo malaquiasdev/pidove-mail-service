@@ -23,24 +23,32 @@ Before you begin, ensure you have met the following requirements:
 
 To install Pidove Mail Service, follow these steps:
 
-Linux and macOS:
+Docker:
 
 ```
-<install_command>
+$ docker build -t pidove-mail-service .
 ```
 
-Windows:
+Linux, macOS and Windows:
 
 ```
-<install_command>
+$ npm install
 ```
 
 ## Using Pidove Mail Service
 
-To use Pidove Mail Service, follow these steps:
+To use in **development** mode, follow these steps:
+
+Docker:
 
 ```
-<usage_example>
+$ docker run -p 8080:8080 pidove-mail-service
+```
+
+Linux, macOS and Windows:
+
+```
+$ npm run dev
 ```
 
 Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
