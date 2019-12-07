@@ -9,9 +9,12 @@ fastify.register(require('fastify-swagger'), swaggerConfig.options);
 
 routes(fastify);
 
+const HOST = '0.0.0.0';
+const PORT = process.env.PORT || 8080;
+
 const start = async () => {
   try {
-    await fastify.listen(8080, '0.0.0.0');
+    await fastify.listen(PORT, HOST);
     fastify.swagger();
   } catch (err) {
     fastify.log.error(err);
