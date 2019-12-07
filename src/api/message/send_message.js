@@ -1,4 +1,4 @@
-const templates = require('../../config/templates');
+const templates = require('../../../config/templates');
 
 const sendMessageApi = async (req, reply) => {
   let message = '';
