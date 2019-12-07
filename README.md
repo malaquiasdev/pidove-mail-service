@@ -4,52 +4,26 @@
   <img width="200" height="auto" src=".github/logo.png"/>
 </p>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/malaquiasdev/README.md)
-![GitHub contributors](https://img.shields.io/github/contributors/malaquiasdev/README.md)
-![GitHub license](https://img.shields.io/github/license/malaquiasdev/pidove-mail-service)
-![Twitter Follow](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fmalaquiasdev%2Fpidove-mail-service)
-
 This is a scalable REST API to send emails with predefined templates.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of `<coding_language/dependency/requirement_1>`
-- You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-- You have read `<guide/link/documentation_related_to_project>`.
+- You have installed the [Node.js](https://nodejs.org/en/)
+- You have installed the [Redis Database](https://redis.io)
+- Or you can use a [Docker Container Platform](https://www.docker.com)
+- You have a SMTP settings server
 
-## Installing Pidove Mail Service
+## Installing and execute with Docker
 
-To install Pidove Mail Service, follow these steps:
-
-Docker:
-
-```
-$ docker build -t pidove-mail-service .
-```
-
-Linux, macOS and Windows:
-
-```
-$ npm install
-```
+1. Clone this repository. `$ git clone https://github.com/malaquiasdev/pidove-mail-service.git`
+2. Go to the project folder. `$ cd pidove-mail-service`
+3. Copy the **.env.example** file and create an **.env** file with your SMTP settings and Redis credentials.
+4. Build a image using docker. `$ docker build -t pidove-mailservice .`
+5. Run the docker image. `$ docker run -p 8080:8080 pidove-mail-service`
 
 ## Using Pidove Mail Service
-
-To use in **development** mode, follow these steps:
-
-Docker:
-
-```
-$ docker run -p 8080:8080 pidove-mail-service
-```
-
-Linux, macOS and Windows:
-
-```
-$ npm run dev
-```
 
 ## Contributing to Pidove Mail Service
 
