@@ -51,8 +51,6 @@ Linux, macOS and Windows:
 $ npm run dev
 ```
 
-Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
-
 ## Contributing to Pidove Mail Service
 
 To contribute to Pidove Mail Service, follow these steps:
