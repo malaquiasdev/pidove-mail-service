@@ -1,4 +1,4 @@
-const pkg = require('../../package');
+const pkg = require('../package');
 
 const swagger = {
   routePrefix: '/doc',
