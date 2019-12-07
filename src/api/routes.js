@@ -5,20 +5,8 @@ const routes = fastify => {
   fastify.route({
     method: 'GET',
     url: '/health',
-    handler: health.healthApi,
-    schema: {
-      response: {
-        200: {
-          description: 'Successful response',
-          type: 'object',
-          properties: {
-            up: { type: 'boolean' },
-            version: { type: 'string' },
-            name: { type: 'string' }
-          }
-        }
-      }
-    }
+    handler: health.api,
+    schema: health.schema
   });
 };
 
