@@ -1,6 +1,5 @@
 const health = require('./health');
 const message = require('./message');
-const fastifySwagger = require('fastify-swagger');
 
 const routes = fastify => {
   fastify.route({
