@@ -1,7 +1,7 @@
 const pkg = require('../package');
 
 const swagger = {
-  routePrefix: '/doc',
+  routePrefix: '/docs',
   exposeRoute: true,
   swagger: {
     info: {

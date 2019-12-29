@@ -1,5 +1,5 @@
-const newUser = {
-  type: 'newUser',
+const newUserMail = {
+  key: 'newUserMail',
   createMessage: (fullName, email) => {
     return {
       from: `Mateus Malaquais <mateusmalaquiasdev@outlook.com>`,
@@ -22,4 +22,4 @@ const newUser = {
   }
 };
 
-module.exports = { newUser };
+module.exports = { newUserMail };
