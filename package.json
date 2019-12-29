@@ -7,8 +7,7 @@
     "start": "node NODE_ENV=production index.js",
     "dev": "nodemon NODE_ENV=development index.js",
     "lint": "eslint --format codeframe src",
-    "lint:report": "eslint -c .eslintrc.json -f html src/** > eslint.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest -u -t='ColorPicker'"
   },
   "repository": {
     "type": "git",
