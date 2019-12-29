@@ -24,6 +24,7 @@
     "dotenv": "^8.2.0",
     "fastify": "^2.10.0",
     "fastify-swagger": "^2.4.0",
+    "nodemailer": "^6.4.2",
     "pino-pretty": "^3.5.0"
   },
   "devDependencies": {
