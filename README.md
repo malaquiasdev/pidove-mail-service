@@ -20,8 +20,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository. `$ git clone https://github.com/malaquiasdev/pidove-mail-service.git`
 2. Go to the project folder. `$ cd pidove-mail-service`
 3. Copy the **.env.example** file and create an **.env** file with your SMTP settings and Redis credentials.
-4. Build a image using docker. `$ docker build -t pidove-mailservice .`
-5. Run the docker image. `$ docker run -p 8080:8080 pidove-mail-service`
+4. Build and run the image using docker compose. `$ docker-compose up --build`
 
 ## Using Pidove Mail Service
 
