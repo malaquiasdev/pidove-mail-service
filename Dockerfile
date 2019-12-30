@@ -2,15 +2,16 @@
 FROM node:alpine
 
 # The api directory insede of the docker image
-WORKDIR /app
+RUN mkdir -p /usr/src/api/
+WORKDIR /usr/src/api/
 
 # A wildcard is used to ensure both package.json AND package-lock.json are copied to the docker image
 
-COPY package*.json ./
+COPY package*.json /usr/src/api/
 
 # Copy the project to the docker image
 
-COPY . .
+COPY . /usr/src/api/
 
 # Install the API dependencies with NPM
 

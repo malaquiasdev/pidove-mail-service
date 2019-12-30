@@ -1,0 +1,14 @@
+redis:
+  image: redis
+  container_name: pidove-mail-service-cache
+  expose:
+    - 6379
+api:
+  build: ./
+  volumes:
+    - ./:/usr/src/api/
+  links:
+    - redis
+  ports:
+    - 8080:8080
+  env_file: ./.env
