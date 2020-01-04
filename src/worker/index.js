@@ -1,5 +1,5 @@
 const log = require('pino')({ level: 'info' });
-const fastify = require('fastify')({ logger: log });
+require('fastify')({ logger: log });
 const Bull = require('bull');
 const redisConfig = require('../../config/redis');
 const jobs = require('./jobs');
