@@ -11,7 +11,7 @@ const routes = fastify => {
 
   fastify.route({
     method: 'POST',
-    url: '/message',
+    url: '/messages/mail',
     handler: message.api,
     schema: message.schema
   });

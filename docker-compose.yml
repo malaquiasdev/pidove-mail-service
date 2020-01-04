@@ -1,8 +1,8 @@
 redis:
-  image: redis
-  container_name: pidove-mail-service-cache
-  expose:
-    - 6379
+  image: redis:5.0.7-alpine
+  container_name: cache
+  ports:
+    - 6379:6379
 api:
   build: ./
   volumes:
@@ -12,3 +12,12 @@ api:
   ports:
     - 8080:8080
   env_file: ./.env
+  command: 'npm run start:server'
+worker:
+  build: ./
+  volumes:
+    - ./:/usr/src/api/
+  links:
+    - redis
+  env_file: ./.env
+  command: 'npm run start:worker'
