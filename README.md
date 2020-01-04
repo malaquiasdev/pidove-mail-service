@@ -34,7 +34,7 @@ Before you begin, ensure you have met the following requirements:
 ## Using Pidove Mail Service
 
 1. Access the api doc in: `http://0.0.0.0:8080/docs`
-2. To create a new job, follow the **newUserMail** pattern.
+2. To create a new template, follow the **newUserMail** pattern.
 
 ## Contributing to Pidove Mail Service
 
