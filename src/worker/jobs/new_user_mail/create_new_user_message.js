@@ -1,11 +1,9 @@
-const newUserMail = {
-  key: 'newUserMail',
-  createMessage: (fullName, email) => {
-    return {
-      from: `Mateus Malaquais <mateusmalaquiasdev@outlook.com>`,
-      to: `${fullName} <${email}>`,
-      subject: `Welcome to Pidove Mail Service`,
-      html: `Hey ${fullName},
+const createNewUserMessage = (fullName, email) => {
+  return {
+    from: `Mateus Malaquais <mateusmalaquiasdev@outlook.com>`,
+    to: `${fullName} <${email}>`,
+    subject: `Welcome to Pidove Mail Service`,
+    html: `Hey ${fullName},
       </p>
       I’m Mateus Malaquias, the founder of Pidove Mail Service and I’d like to personally thank you for signing up to our service.
       <br>
@@ -18,8 +16,7 @@ const newUserMail = {
       I’m always happy to help!
       </p>
       Mateus Malaquias`
-    };
-  }
+  };
 };
 
-module.exports = { newUserMail };
+module.exports = createNewUserMessage;

@@ -5,8 +5,8 @@ const fastify = require('fastify')({
     level: 'info'
   }
 });
-const routes = require('./src/api/routes');
 const swaggerConfig = require('./config/swagger');
+const routes = require('./src/api/routes');
 
 fastify.register(require('fastify-swagger'), swaggerConfig.options);
 

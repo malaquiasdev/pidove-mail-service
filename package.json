@@ -4,8 +4,10 @@
   "description": "This is a scalable REST API to send emails with predefined templates.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start:server": "node index.js",
+    "start:worker": "node worker_start.js",
+    "dev:server": "nodemon index.js",
+    "dev:worker": "nodemon worker_start.js",
     "lint": "eslint --format codeframe src",
     "test": "jest -u -t='ColorPicker'"
   },
@@ -20,6 +22,7 @@
   },
   "homepage": "https://github.com/malaquiasdev/pidove-mail-service#readme",
   "dependencies": {
+    "bull": "^3.12.1",
     "dotenv": "^8.2.0",
     "fastify": "^2.10.0",
     "fastify-swagger": "^2.4.0",
